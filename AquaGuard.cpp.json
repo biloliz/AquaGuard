@@ -1,0 +1,24 @@
+// AquaGuard
+const int waterLevelPin = 2;  // Input from digital water level sensor
+const int pumpRelayPin = 8;   // Output to relay (controlling faucet valve)
+
+void setup() {
+  pinMode(waterLevelPin, INPUT_PULLUP);  // Active LOW
+  pinMode(pumpRelayPin, OUTPUT);
+  digitalWrite(pumpRelayPin, LOW);       // Valve OFF initially
+  Serial.begin(9600);
+}
+
+void loop() {
+  bool waterLow = digitalRead(waterLevelPin) == LOW;
+
+  if (waterLow) {
+    digitalWrite(pumpRelayPin, HIGH); // Open valve
+    Serial.println("Water low - Valve ON");
+  } else {
+    digitalWrite(pumpRelayPin, LOW);  // Close valve
+    Serial.println("Water OK - Valve OFF");
+  }
+
+  delay(1000);
+}
