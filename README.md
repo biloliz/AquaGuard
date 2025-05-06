@@ -1,5 +1,4 @@
 # 🚰 AquaGuard: Smart Faucet-Attachable Water Level Controller
-Pitch Tagline:
 “Prevent overflow. Save every drop. Let AquaGuard handle the flow.”
 
 ## 🌟 Overview
