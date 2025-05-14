@@ -19,13 +19,6 @@ Power Supply (12V for valve, USB/5V for Arduino)
 
 Waterproof Enclosure (optional but recommended)
 
-## 🔧 Setup & Pin Connections
-Component	Arduino Nano Pin
-Water Level Sensor	D2
-Relay Module (IN)	D8
-
-The valve is connected to a faucet using standard threading or adapters, and the relay controls when water flows in or not.
-
 ## 🧠 Functionality
 Low Water Level Detected: Valve opens, water flows in.
 
